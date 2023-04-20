@@ -4,7 +4,7 @@
 
 ## Description
 
-This project aims to display statistics for the ongoing NHL playoffs.
+NHL Stats
 
 ## Table Of Contents
 
@@ -24,11 +24,11 @@ This project aims to display statistics for the ongoing NHL playoffs.
 
 To install necessary dependencies, run the following command:
 
-npm i
+`npm i`
 
 ## Usage
 
-It's really cool.
+Work in progress
 
 ## License
 
@@ -36,13 +36,13 @@ MIT license
 
 ## Contributing
 
-Please create a new branch before making changes to the code.
+Please create new branch based off main before beginning work.
 
 ## Tests
 
 Run the following command, to test the program:
 
-npm test
+`npm test`
 
 ## Questions
 

@@ -77,7 +77,7 @@ ${response.description}
 
 To install necessary dependencies, run the following command:
 
-${response.installation}
+\`${response.installation}\`
 
 ## Usage
 
@@ -95,7 +95,7 @@ ${response.contribution}
 
 Run the following command, to test the program:
 
-${response.tests}
+\`${response.tests}\`
 
 ## Questions
 
