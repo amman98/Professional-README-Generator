@@ -10,7 +10,7 @@ inquirer
         },
         {
             type: "input",
-            message: "What is your email? " ,
+            message: "What is your email address? " ,
             name: "email",
         },
         {
@@ -50,3 +50,60 @@ inquirer
             name: "tests",
         },
 ])
+.then((response) => {
+        const readmeString = `# ${response.title}
+![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
+
+
+## Description
+
+${response.description}
+
+## Table Of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+To install necessary dependencies, run the following command:
+
+${response.installation}
+
+## Usage
+
+${response.usage}
+
+## License
+
+${response.license} license
+
+## Contributing
+
+${response.contribution}
+
+## Tests
+
+Run the following command, to test the program:
+
+${response.tests}
+
+## Questions
+
+If you have any questions, please contact me at the following email address: mailto:${response.email}
+
+Here is a link to my GitHub profile: https://github.com/${response.github} 
+        `;
+
+        fs.writeFile("./dist/README.md", readmeString, (err) => err ? console.error(err) : console.log("README created!"))
+    }
+);
