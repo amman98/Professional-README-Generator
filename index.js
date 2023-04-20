@@ -1,7 +1,15 @@
+// imported packages
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+/*
+* This program prompts the user for various information that is normally
+* provided when creating a project README. It then creates a template
+* literal to write the contents of said README and write it to a markdown file.
+*/
+
 inquirer
+    // prompt the user for information that we will use to populate our README
     .prompt([
         {
             type: "input",
@@ -51,6 +59,7 @@ inquirer
         },
 ])
 .then((response) => {
+        // this constant populates the README by using our above user inputs
         const readmeString = `# ${response.title}
 ![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
 
@@ -104,6 +113,7 @@ If you have any questions, please contact me at the following email address: mai
 Here is a link to my GitHub profile: https://github.com/${response.github} 
         `;
 
+        // write the contents of our string to a new README file
         fs.writeFile("./dist/README.md", readmeString, (err) => err ? console.error(err) : console.log("README created!"))
     }
 );
