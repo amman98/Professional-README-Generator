@@ -4,7 +4,7 @@
 
 ## Description
 
-NHL Stats
+Compiles statistics from the NHL Playoffs.
 
 ## Table Of Contents
 
@@ -28,7 +28,7 @@ To install necessary dependencies, run the following command:
 
 ## Usage
 
-Work in progress
+This repo is a work in progress.
 
 ## License
 
@@ -36,7 +36,7 @@ MIT license
 
 ## Contributing
 
-Please create new branch based off main before beginning work.
+Please create a new branch before adding to code.
 
 ## Tests
 
